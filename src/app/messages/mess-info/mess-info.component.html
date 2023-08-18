@@ -1,0 +1,19 @@
+<div class="container" *ngFor="let data of infoDatas">
+    <div class="title">
+        <div>
+            <h2>{{data.subject}}</h2>
+            <p>{{data.sender}}</p>
+        </div>
+        <div>
+            <p>{{data.date2}}</p>
+            <div class="button">
+                <button><i class="fa-solid fa-reply"></i>Reply</button>
+                <button><i class="fa-solid fa-forward"></i>Forward</button>
+                <button><i class="fa-solid fa-trash-can"></i>Delete</button>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <p [innerHTML]="data.content"></p>
+    </div>
+</div>

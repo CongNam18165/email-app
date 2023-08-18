@@ -1,0 +1,45 @@
+.infomation{
+    overflow-y: scroll;
+    flex-grow: 7;
+    height: 200px;
+}
+table{
+    border-spacing: 0;
+    table-layout: fixed;
+    width: 100%;
+}
+thead tr td{
+    font-weight: 800;
+}
+i {
+    color: blue;
+    font-size: 6px;
+}
+
+tr td:first-child {
+    text-align: center;
+    width: 20px;
+}
+
+tr td:nth-child(2) {
+    width: 21% ;
+}
+
+tr td:nth-child(3) {
+    width: 62%;
+}
+
+tr td:last-child {
+    width: 15%;
+}
+tr td{
+    padding: 0 8px;
+    cursor: pointer;
+    white-space: nowrap;
+    overflow: hidden ;
+    text-overflow: ellipsis;
+}
+.choose{
+    color: white;
+    background-color: #6495ed;
+}

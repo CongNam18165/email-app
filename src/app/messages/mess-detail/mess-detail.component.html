@@ -1,0 +1,25 @@
+<div class="infomation">
+    <table>
+        <thead>
+            <tr>
+                <td></td>
+                <td>Sender</td>
+                <td>Subject</td>
+                <td>Date</td>
+            </tr>
+        </thead>
+        <tbody>
+                <tr *ngFor="let data of finalDatas" 
+                 [routerLink]="[{ outlets: { outlet2: [data.id]}}]"
+                 routerLinkActive="choose"
+                 >
+                    <td><i class="fa-solid fa-circle"></i></td>
+                    <td>{{data.sender}}</td>
+                    <td>{{data.subject}}</td>
+                    <td>{{data.date1}}</td>
+                </tr>
+        </tbody>
+    </table>
+</div>
+<router-outlet name="outlet2"></router-outlet> 
+

@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="box1">
+        <div class="folders">
+            <ul>
+                <li *ngFor="let data of datas" routerLinkActive="choose">
+                    <a [routerLink]="[ { outlets: { outlet1: data.id}}]">{{data.id}}</a>
+                </li>
+            </ul>
+        </div>
+        <router-outlet name="outlet1"></router-outlet>
+    </div>
+    <div class="box2">
+    </div>
+</div>

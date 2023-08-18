@@ -1,0 +1,43 @@
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.box1{
+    display: flex;
+    /* justify-content: flex-start; */
+    /* align-items: center; */
+}
+.folders{
+    overflow-y: scroll;
+    height: 200px;
+    /* margin-top: 5px ; */
+    flex: 3 0 120px;
+    
+}
+.folders ul{
+    background-color: #ddd;
+    list-style: none;
+    padding: 8px 0px;
+    margin: 0;
+}
+.folders ul li{
+    cursor: pointer;
+/* text-align: center; */
+margin: 7px 0px;
+}
+.folders ul li i{
+    margin-right: 3px;
+}
+a{
+    padding: 0 12px;
+    text-decoration: none;
+    color: black;
+}
+
+.choose{
+    background-color: #337ab7;
+    /* color: white; */
+}
+.choose a{
+    color: white;
+}
