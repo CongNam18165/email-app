@@ -1,6 +1,7 @@
 .infomation{
     overflow-y: scroll;
-    flex-grow: 7;
+    /* flex-grow: 7; */
+    flex: 7 0 90%;
     height: 200px;
 }
 table{

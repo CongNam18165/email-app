@@ -18,13 +18,18 @@ const messRoutes: Routes = [
             path: ":id",
             component: MessDetailComponent,
             outlet: "outlet1",
-            children: [
-              {
-                path: ":info",
-                component: MessInfoComponent,
-                outlet: "outlet2"
-              }
-            ]
+            // children: [
+            //   {
+            //     path: ":info",
+            //     component: MessInfoComponent,
+            //     outlet: "outlet2"
+            //   }
+            // ]
+          },
+          {
+            path: ":info",
+            component: MessInfoComponent,
+            outlet: "outlet2",
           }
         ],
       }

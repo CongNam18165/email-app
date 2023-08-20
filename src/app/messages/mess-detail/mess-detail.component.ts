@@ -25,6 +25,6 @@ export class MessDetailComponent implements DoCheck {
     this.datas.setData(this.id);
   }
   test() {
-    console.log(this.id)
+    console.log(this.finalDatas)
   }
 }

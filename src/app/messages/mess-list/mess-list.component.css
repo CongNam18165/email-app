@@ -4,14 +4,12 @@
 }
 .box1{
     display: flex;
-    /* justify-content: flex-start; */
-    /* align-items: center; */
+
 }
 .folders{
     overflow-y: scroll;
     height: 200px;
-    /* margin-top: 5px ; */
-    flex: 3 0 120px;
+    flex: 3 0 10%;
     
 }
 .folders ul{

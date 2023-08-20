@@ -1,5 +1,5 @@
 .container{
-    margin-left:calc(-8% + -7px);
+   flex: 10 0 120%;
 }
 .title{
     /* margin: 8px 0; */

@@ -18,7 +18,7 @@ export class MessInfoComponent implements DoCheck {
     this.info = this.route.snapshot.params["info"];
     this.mainDatas = this.datas.dataList.filter(data => data.type === this.datas.type);
     this.infoDatas = this.mainDatas.filter(data =>  data.id === Number(this.info))
-    
+    console.log(this.info)
   }
 
 }
