@@ -12,8 +12,9 @@
                 <tr *ngFor="let data of finalDatas" 
                  [routerLink]="['/messages',{ outlets: { outlet2: [data.id]}}]"
                  routerLinkActive="choose"
+                 (click)="checkRead(data.isRead, data.id)"
                  >
-                    <td (click)="test()"><i class="fa-solid fa-circle"></i></td>
+                    <td ><i *ngIf="data.isRead === 'false'" class="fa-solid fa-circle"></i></td>
                     <td>{{data.sender}}</td>
                     <td>{{data.subject}}</td>
                     <td>{{data.date1}}</td>

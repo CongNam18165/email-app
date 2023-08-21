@@ -2,8 +2,12 @@
     <div class="box1">
         <div class="folders">
             <ul>
-                <li *ngFor="let data of datas" routerLinkActive="choose">
+                <!-- <li *ngFor="let data of datas" routerLinkActive="choose">
                     <a [routerLink]="[{ outlets: { outlet1: data.id}}]">{{data.id}}</a>
+                </li> -->
+                <li *ngFor="let data of datas" routerLinkActive="choose" 
+                [routerLink]="[{ outlets: { outlet1: data.id}}]">
+                {{data.id}}
                 </li>
             </ul>
         </div>

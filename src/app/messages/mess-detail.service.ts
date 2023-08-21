@@ -5,13 +5,15 @@ import { Injectable } from '@angular/core';
 })
 export class MessDetailService {
   type: string = ''
-setData(value: any){
-  this.type = value;
-}
+  setData(value: any) {
+    this.type = value;
+  }
+  
   dataList: any[] = [
     {
       id: 1,
       type: 'inbox',
+      isRead: 'false',
       sender: "nora hobbs <nora.hobbs@elflore.medesign.name> -> myself@angular.dev",
       subject: "How this change came about, we.",
       date1: "2014-01-14",
@@ -31,6 +33,7 @@ setData(value: any){
     {
       id: 2,
       type: 'inbox',
+      isRead: 'false',
       sender: "doreen freeman <doreen.freeman@sneetches.veraq.info> -> myself@angular.dev",
       subject: "Longer in style, said McBean. And thats.",
       date1: "2014-02-08",
@@ -52,6 +55,7 @@ setData(value: any){
     {
       id: 3,
       type: 'inbox',
+      isRead: 'false',
       sender: "melton beach <melton.beach@cat-in-the-hat.datagen.net> -> myself@angular.dev",
       subject: "I do not. Oh,.",
       date1: "2014-09-07",
@@ -74,6 +78,7 @@ setData(value: any){
     {
       id: 1,
       type: 'finance',
+      isRead: 'false',
       sender: "earline shepherd <earline.shepherd@macbeth.exoplode.ca> -> myself@angular.dev",
       subject: "Hecate! You look angerly. HECATE Have I not.",
       date1: "2015-07-22",
@@ -95,6 +100,7 @@ setData(value: any){
     {
       id: 2,
       type: 'finance',
+      isRead: 'false',
       sender: "ellen williamson <ellen.williamson@comm_man.accel.net> -> myself@angular.dev",
       subject: "Historical change consequent upon the old local and national seclusion and selfsufficiency.",
       date1: "2014-11-17",
@@ -112,6 +118,7 @@ setData(value: any){
     {
       id: 3,
       type: 'finance',
+      isRead: 'false',
       sender: "hutchinson weiss <hutchinson.weiss@macbeth.cinesanct.us> -> myself@angular.dev",
       subject: "Of us. The gracious Duncan have I murderd Put rancours in the.",
       date1: "2015-08-23",
@@ -133,6 +140,7 @@ setData(value: any){
     {
       id: 4,
       type: 'finance',
+      isRead: 'false',
       sender: "rosanne vance <rosanne.vance@elflore.insectus.io> -> myself@angular.dev",
       subject: "Rings, does not die, but the true immortality.",
       date1: "2014-09-24",
